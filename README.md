@@ -5,6 +5,7 @@
 ```
   1. HTML 기초
   2. HTML과 CSS를 통하여 내 로그인 페이지 만들고 꾸미기
+    - 이미지 넣기 및 폰트 입히기
 
   구글 웹 폰트 : https://fonts.google.com/?subset=korean&sidebar.open=true&selection.family=Nanum+Myeongjo
 ```
