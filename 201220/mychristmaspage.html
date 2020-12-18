@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코로나19년도를 보내며</title>
+
+    <meta property="og:image"
+        content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+    <meta property="og:title" content="장훈이의 카드">
+    <meta property="og:description" content="2020을 추억하며~">
+    <!-- 공유용 링크의 이미지 제목 요약-->
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+    <!-- favicon-->
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+
+            cursor: pointer;
+        }
+
+        .envelope_msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter_close {
+            display: block;
+        }
+
+        .letter_open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif");
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .letter_title {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .msg_box {
+            color: brown;
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msg_box {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+
+                margin: 70px auto 0px auto;
+            }
+
+            .letter_title {
+                font-size: 28px;
+            }
+
+            .envelope {
+
+                margin: 150px auto 0 auto;
+            }
+        }
+    </style>
+    <!-- @media screen and (max-width: 760px) : 모바일 처리 따로-->
+    <!-- body에는 class를 달 필요가 없다. 단 한 개이므로-->
+    <!-- 컨트롤 + K + F 자동 줄맞춤-->
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter_close")[0].style.display = 'none'
+            document.getElementsByClassName("letter_open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            alert('와 존나 다 눌러 봤나보네');
+            window.location.href = 'https://www.naver.com';
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter_close">
+        <div class="envelope" onclick="open_letter()"> </div>
+        <h2 class="envelope_msg">봉투를 열어봐!</h2>
+    </div>
+    <div class="letter_open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1 class="letter_title">코로나 뒤졌으면</h1>
+        <div class="msg_box">야~ 코로나~ 뒤져라~ </br>
+            시발~ 마스크~ 존낸쉬룸~</br>
+            동해물과 백두산이 마르고 닳도록
+            <p class="from">
+                나야나 나야나
+            </p>
+        </div>
+    </div>
+    <!-- br = \n -->
+    <!-- text_align = 텍스트 방향 -->
+</body>
+
+</html>
