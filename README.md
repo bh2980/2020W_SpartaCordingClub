@@ -9,3 +9,11 @@
 
   구글 웹 폰트 : https://fonts.google.com/?subset=korean&sidebar.open=true&selection.family=Nanum+Myeongjo
 ```
+
+### [201220 : JavaScript 맛보기](https://github.com/bh2980/SpartaCordeiClub/tree/main/201220)
+```
+  1. 크리스마스 편지 만들기
+
+  만든 html 배포용 코드 : http://spartacodingclub.shop/upload_xmas
+  //함부로 쓰면 안될듯
+```
